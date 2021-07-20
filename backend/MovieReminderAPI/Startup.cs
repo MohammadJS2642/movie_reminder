@@ -11,21 +11,34 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Model;
+using SignupAndLoginDLL.Model;
+using MySql.EntityFrameworkCore;
+using MySql.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace MovieReminderAPI
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
+            Environment = env;
             Configuration = configuration;
         }
 
+        public IWebHostEnvironment Environment { get; }
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // for connecting to mysql database
+            services.AddDbContext<MovieContext>(options =>
+            {
+                options.UseMySQL(Configuration.GetConnectionString("default"));
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
