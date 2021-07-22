@@ -11,12 +11,13 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using Model;
+using MovieReminderAPI.Model;
 using SignupAndLoginDLL.Models;
 using MySql.EntityFrameworkCore;
 using MySql.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using MovieTableDLL.Models;
 
 namespace MovieReminderAPI
 {
@@ -34,6 +35,10 @@ namespace MovieReminderAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // for connect to models
+            services.AddScoped<MovieModels, MovieModels>();
+            services.AddScoped<UsersModel, UsersModel>();
+
             // for connecting to mysql database
             services.AddDbContext<MovieContext>(options =>
             {

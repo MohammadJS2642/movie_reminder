@@ -1,11 +1,9 @@
-using System.Reflection.Metadata.Ecma335;
-using System.Globalization;
 using System.Collections;
 using System.Collections.Generic;
 using System;
 using Microsoft.AspNetCore.Mvc;
 using SignupAndLoginDLL.Models;
-using Model;
+using MovieReminderAPI.Model;
 using System.Linq;
 
 namespace MovieReminderAPI.Controllers
@@ -121,7 +119,7 @@ namespace MovieReminderAPI.Controllers
                 if (id.ToString() != null)
                 {
                     var user = _context.UsersModels.Where(userID => userID.ID == id)
-                    .FirstOrDefault<UsersModel>();
+                    .First<UsersModel>();
 
                     if (_context.UsersModels != null)
                     {
