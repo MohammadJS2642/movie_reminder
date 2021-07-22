@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Model;
 
 namespace MovieReminderAPI.Migrations
 {
     [DbContext(typeof(MovieContext))]
-    partial class MovieContextModelSnapshot : ModelSnapshot
+    [Migration("20210722100805_MovieModelsAdded")]
+    partial class MovieModelsAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -23,13 +25,13 @@ namespace MovieReminderAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("MovieAddedDdate")
+                    b.Property<DateTime>("MovieAddedDdate")
                         .HasColumnType("datetime");
 
                     b.Property<string>("MovieName")
                         .HasColumnType("text");
 
-                    b.Property<DateTime?>("MovieReleaseDate")
+                    b.Property<DateTime>("MovieReleaseDate")
                         .HasColumnType("datetime");
 
                     b.HasKey("ID");
@@ -43,10 +45,10 @@ namespace MovieReminderAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<int?>("Age")
+                    b.Property<int>("Age")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("BirthDate")
+                    b.Property<DateTime>("BirthDate")
                         .HasColumnType("datetime");
 
                     b.Property<string>("Email")
