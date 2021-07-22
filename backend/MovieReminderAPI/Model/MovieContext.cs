@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using SignupAndLoginDLL.Models;
 using MovieTableDLL.Models;
 
-namespace Model
+namespace MovieReminderAPI.Model
 {
     public class MovieContext : DbContext
     {
