@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using SignupAndLoginDLL.Models;
+using MovieTableDLL.Models;
 
 namespace Model
 {
@@ -11,5 +12,6 @@ namespace Model
 
         }
         public DbSet<UsersModel> UsersModels { get; set; }
+        public DbSet<MovieModels> MovieModels { get; set; }
     }
 }
