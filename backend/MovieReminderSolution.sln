@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReminderAPI", "MovieRe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignupAndLoginDLL", "SignupAndLoginDLL\SignupAndLoginDLL.csproj", "{12EA2F8A-894B-4276-B4AE-C50AEE7BC95B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieTableDLL", "MovieTableDLL\MovieTableDLL.csproj", "{3333286F-EF07-4ADF-A12F-C3F06EDF2828}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{12EA2F8A-894B-4276-B4AE-C50AEE7BC95B}.Release|x64.Build.0 = Release|Any CPU
 		{12EA2F8A-894B-4276-B4AE-C50AEE7BC95B}.Release|x86.ActiveCfg = Release|Any CPU
 		{12EA2F8A-894B-4276-B4AE-C50AEE7BC95B}.Release|x86.Build.0 = Release|Any CPU
+		{3333286F-EF07-4ADF-A12F-C3F06EDF2828}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3333286F-EF07-4ADF-A12F-C3F06EDF2828}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3333286F-EF07-4ADF-A12F-C3F06EDF2828}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3333286F-EF07-4ADF-A12F-C3F06EDF2828}.Debug|x64.Build.0 = Debug|Any CPU
+		{3333286F-EF07-4ADF-A12F-C3F06EDF2828}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3333286F-EF07-4ADF-A12F-C3F06EDF2828}.Debug|x86.Build.0 = Debug|Any CPU
+		{3333286F-EF07-4ADF-A12F-C3F06EDF2828}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3333286F-EF07-4ADF-A12F-C3F06EDF2828}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3333286F-EF07-4ADF-A12F-C3F06EDF2828}.Release|x64.ActiveCfg = Release|Any CPU
+		{3333286F-EF07-4ADF-A12F-C3F06EDF2828}.Release|x64.Build.0 = Release|Any CPU
+		{3333286F-EF07-4ADF-A12F-C3F06EDF2828}.Release|x86.ActiveCfg = Release|Any CPU
+		{3333286F-EF07-4ADF-A12F-C3F06EDF2828}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
