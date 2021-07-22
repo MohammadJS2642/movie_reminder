@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using Microsoft.AspNetCore.Mvc;
-using SignupAndLoginDLL.Model;
+using SignupAndLoginDLL.Models;
 using Model;
 using System.Linq;
 
