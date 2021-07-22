@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace SignupAndLoginDLL.Model
+namespace SignupAndLoginDLL.Models
 {
     public class UsersModel
     {
