@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-
+using SignupAndLoginDLL.Models;
 
 namespace Model
 {
