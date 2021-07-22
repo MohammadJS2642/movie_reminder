@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SignupAndLoginDLL\SignupAndLoginDLL.csproj" />
+    <ProjectReference Include="..\MovieTableDLL\MovieTableDLL.csproj" />
   </ItemGroup>
 
 </Project>
