@@ -1,0 +1,27 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.mainHeader {
+  width: 100%;
+  background-color: #5885af;
+  text-align: center;
+  /*           X Y blur spread color */
+  box-shadow: 0px 4px 40px 0px #393939;
+}
+
+.headerTitle {
+  color: #383838;
+  opacity: 85;
+  font-size: 2rem;
+}
+
+.searchBar {
+  border: 1px solid #c3e0e5;
+  width: 15%;
+  height: 2rem;
+  border-radius: 30px;
+  /* box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.4); */
+}
