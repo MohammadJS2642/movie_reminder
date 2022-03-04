@@ -1,0 +1,1 @@
+dotnet-aspnet-codegenerator controller --controllerName 'MovieReminderAuthenticationController' --model 'UserAuthentication' -outDir 'Controllers' -async --dataContext 'MovieReminderAuthenticationDbContext' -api
