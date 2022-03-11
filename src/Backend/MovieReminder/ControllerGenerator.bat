@@ -1,1 +1,1 @@
-dac controller --controllerName 'MovieReminderController' --model 'Movie' -outDir 'Controllers' -async --dataContext 'MovieReminderDbContext' -api
+dotnet-aspnet-codegenerator controller --controllerName MovieReminderController --model Movie -outDir Controllers -async --dataContext MovieReminderDbContext -api

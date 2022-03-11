@@ -1,1 +1,1 @@
-dotnet ef dbcontext scaffold name=movieReminder --context 'MovieReminderDbContext' --context-dir 'DBContext' Microsoft.EntityFrameworkCore.SqlServer --output-dir 'Models' --force
+dotnet ef dbcontext scaffold name=ConnectionStrings:movieReminder --context MovieReminderDbContext --context-dir DBContext Microsoft.EntityFrameworkCore.SqlServer --output-dir Models
