@@ -23,7 +23,7 @@ namespace MovieReminder.DBContext
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("name=movieReminder");
+                optionsBuilder.UseSqlServer("name=ConnectionStrings:movieReminder");
             }
         }
 
