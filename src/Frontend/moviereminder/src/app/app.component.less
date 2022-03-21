@@ -22,21 +22,45 @@
   // max-width: 100%;
 }
 #header {
+  display: grid;
   grid-column: 1 / span 12;
+  grid-template-columns: repeat(11, 1fr);
   background-color: #495057;
   border: solid 2px #adb5bd;
   height: 10vh;
 }
+#header > #text {
+  grid-column: 5/8;
+  justify-self: center;
+  align-self: center;
+}
+#header > #text > p {
+  color: whitesmoke;
+  font-size: 2em;
+}
+
 #aside {
   grid-column: 1 / span 2;
   background-color: #495057;
   border: solid 2px #adb5bd;
 }
 #main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, auto);
+  height: 84vh;
   grid-column: 1 / span 12;
   background-color: #495057;
   border: solid 2px #adb5bd;
 }
+
+#main #add-button {
+  grid-column: 12 / span 1;
+  grid-row: 11 / 12;
+  justify-self: center;
+  align-self: center;
+}
+
 #footer {
   grid-column: 1 / span 12;
   background-color: #495057;
