@@ -1,1 +1,0 @@
-dotnet ef dbcontext scaffold name=movieReminderAuthentication --context 'MovieReminderAuthenticationDbContext' --context-dir 'DBContext' Microsoft.EntityFrameworkCore.SqlServer --output-dir 'Models' --force
